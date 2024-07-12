@@ -1,0 +1,165 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Outfit";
+  display: flex;
+  justify-content: center;
+  position: relative;
+  min-height: 100vh;
+  background-color: hsl(30, 54%, 90%);
+}
+
+main {
+  width: 740px;
+  background-color: white;
+  margin: 150px 0;
+  border-radius: 25px;
+  color: hsl(30, 10%, 34%);
+}
+
+figure, .conteudo {
+  margin: 40px 40px 30px;
+}
+
+img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Young serif";
+  margin: 30px 0 18px;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 400;
+  color: hsl(24, 5%, 18%);
+}
+
+h2 {
+  font-size: 25px;
+  font-weight: 400;
+  color: hsl(14, 45%, 36%);
+}
+
+h3 {
+  color: hsl(332, 51%, 32%);
+  font-family: "Outfit";
+}
+
+p {
+  font-size: 16px;
+  color: hsl(30, 10%, 34%);
+}
+
+ul,
+ol {
+  margin-left: 18px;
+}
+
+ul li,
+ol li {
+  padding: 0 20px 10px;
+}
+ul li::marker {
+  font-size: 12px;
+}
+
+ul b {
+  font-weight: 600;
+}
+
+.preparation-time {
+  padding: 28px;
+}
+
+hr {
+  margin: 20px 0;
+  border: none;
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+ol li::marker {
+  color: hsl(14, 45%, 36%);
+  font-weight: 700;
+  font-family: "Outfit";
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+tr td {
+  width: 50%;
+  padding: 12px 0;
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+tr td:first-child {
+  padding-left: 32px;
+}
+tr:last-child td {
+  border: none;
+}
+
+td span {
+  font-weight: 600;
+  color: hsl(14, 45%, 36%);
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 20px;
+}
+
+@media (max-width: 375px) {
+  main {
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .conteudo {
+    margin: 31px;
+  }
+
+  figure {
+    margin: 0;
+  }
+
+  img {
+    border-radius: 0;
+  }
+
+  h1 {
+    font-size: 35px;
+    line-height: 35px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  .preparation-time {
+    padding: 24px;
+  }
+
+  ul,
+  ol {
+    margin-left: 24px;
+  }
+
+  .attribution {
+    display: none;
+  }
+}
